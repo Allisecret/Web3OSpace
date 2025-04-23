@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3.0 iOS Responsive Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #f7fafc;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(110deg, #43cea2 0%, #185a9d 100%);
+        }
+        
+        .card-blur {
+            background: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 2px 8px rgba(15, 30, 90, 0.09);
+            backdrop-filter: blur(10px);
+        }
+        
+        .animated-fadein {
+            animation: fadein 1s cubic-bezier(.39, .575, .565, 1) both;
+        }
+        
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Hide scrollbars for PDF optimization, but don't break content flow */
+        
+         ::-webkit-scrollbar {
+            width: 0 !important;
+        }
+        
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="text-gray-800">
+
+    <!-- Navigation Bar -->
+    <header class="gradient-bg px-4 lg:px-10 py-4 flex items-center justify-between shadow-md sticky top-0 z-30 animated-fadein">
+        <div class="flex items-center space-x-3">
+            <i class="fab fa-connectdevelop text-white text-2xl"></i>
+            <span class="text-xl font-bold text-white tracking-tight">Web3OSpace</span>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+            <a href="#features" class="text-white hover:underline font-medium">Features</a>
+            <a href="#testimonials" class="text-white hover:underline font-medium">Testimonials</a>
+            <a href="#pricing" class="text-white hover:underline font-medium">Pricing</a>
+            <a href="#cta" class="gradient-bg px-5 py-2 rounded-lg text-white font-semibold shadow transition-colors duration-200 hover:bg-blue-400">Get Started</a>
+        </nav>
+        <button class="block md:hidden text-white text-2xl"><i class="fas fa-bars"></i></button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="w-full pt-14 pb-20 gradient-bg text-white flex flex-col items-center px-4 animated-fadein">
+        <div class="w-full max-w-3xl text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Experience the Future of <span class="bg-white bg-opacity-30 px-2 rounded">Web3.0</span> Apps<br>with iOS Elegance</h1>
+            <p class="mb-8 text-lg md:text-xl leading-relaxed">Seamlessly designed landing page template for Web3.0 DApps and teams, inspired by iOS aesthetics. Mobile-first, fully responsive, export-ready for PDF. Your next-gen launch, today.</p>
+            <a href="#pricing" class="inline-block gradient-bg py-3 px-8 rounded-xl shadow text-lg font-semibold hover:bg-blue-700 transition">Start Free Trial</a>
+        </div>
+        <div class="mt-12 w-full max-w-2xl mx-auto">
+            <video controls playsinline webkit-playsinline poster="" class="rounded-2xl shadow-xl w-full ring-2 ring-white ring-opacity-20">
+        <source src="https://www.apple.com/105/media/us/ios/2023/f4e872be-e195-476f-ba43-6ba51b3f7ed4/films/ios17/ios17-tpl-us-2023_1280x720.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="max-w-6xl mx-auto px-4 py-16" id="features">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Core Features</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="card-blur rounded-xl p-8 text-center animated-fadein">
+                <i class="fas fa-mobile-alt text-blue-500 text-3xl mb-4"></i>
+                <h3 class="font-semibold text-xl mb-2">iOS-First Responsive Design</h3>
+                <p>Auto-adapts from iPhones to desktops. Retina-ready visuals with slick, fluid transitions and big touch controls.</p>
+            </div>
+            <div class="card-blur rounded-xl p-8 text-center animated-fadein">
+                <i class="fas fa-lock text-green-500 text-3xl mb-4"></i>
+                <h3 class="font-semibold text-xl mb-2">Web3 Authentication</h3>
+                <p>Built with wallet connect, chain switching, safe login and decentralized profile support. Easy to extend.</p>
+            </div>
+            <div class="card-blur rounded-xl p-8 text-center animated-fadein">
+                <i class="fas fa-magic text-purple-500 text-3xl mb-4"></i>
+                <h3 class="font-semibold text-xl mb-2">Modern iOS Animations</h3>
+                <p>Subtle fade-ins, button motion & glass-morphism effects for stunning, modern user delight.</p>
+            </div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 mt-10">
+            <div class="card-blur rounded-xl p-8 text-center animated-fadein">
+                <i class="fas fa-file-pdf text-red-400 text-3xl mb-4"></i>
+                <h3 class="font-semibold text-xl mb-2">PDF-Optimized Layout</h3>
+                <p>Export perfect, continuous PDF with preserved iOS style — ideal for demos, docs or VC decks.</p>
+            </div>
+            <div class="card-blur rounded-xl p-8 text-center animated-fadein">
+                <i class="fas fa-cogs text-yellow-500 text-3xl mb-4"></i>
+                <h3 class="font-semibold text-xl mb-2">One-File, Easy Customization</h3>
+                <p>Just edit this single HTML file to make it your own — swap colors, sections, icons and text with ease.</p>
+            </div>
+            <div class="card-blur rounded-xl p-8 text-center animated-fadein">
+                <i class="fas fa-code text-indigo-400 text-3xl mb-4"></i>
+                <h3 class="font-semibold text-xl mb-2">Ready for Web3 Dashboards</h3>
+                <p>Quickly build in charts, balances, and DApp utilities using built-in support for modern JS and design.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="gradient-bg py-16 px-4" id="testimonials">
+        <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">What Teams Say</h2>
+        <div class="max-w-[1100px] mx-auto grid md:grid-cols-3 gap-8">
+            <div class="bg-white bg-opacity-70 rounded-xl p-6 text-center card-blur shadow transition-all duration-300 hover:scale-105">
+                <div class="flex justify-center mb-4">
+                    <img class="h-14 w-14 rounded-full border-2 border-blue-400" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile">
+                </div>
+                <p class="italic text-gray-700">“This template gave our DApp launch a real Apple-style polish. Clients thought our site WAS an App Store page.”</p>
+                <div class="mt-4 font-semibold text-blue-700">Aaron S.</div>
+                <div class="text-xs text-gray-500">Growth Lead, BlockSync</div>
+            </div>
+            <div class="bg-white bg-opacity-70 rounded-xl p-6 text-center card-blur shadow transition-all duration-300 hover:scale-105">
+                <div class="flex justify-center mb-4">
+                    <img class="h-14 w-14 rounded-full border-2 border-green-400" src="https://randomuser.me/api/portraits/women/65.jpg" alt="Profile">
+                </div>
+                <p class="italic text-gray-700">“Clean, modern, and exported beautifully to PDF for our investor pitch. Ridiculously easy to tweak!”</p>
+                <div class="mt-4 font-semibold text-green-700">Megan T.</div>
+                <div class="text-xs text-gray-500">Co-founder, OmniChain</div>
+            </div>
+            <div class="bg-white bg-opacity-70 rounded-xl p-6 text-center card-blur shadow transition-all duration-300 hover:scale-105">
+                <div class="flex justify-center mb-4">
+                    <img class="h-14 w-14 rounded-full border-2 border-purple-400" src="https://randomuser.me/api/portraits/men/41.jpg" alt="Profile">
+                </div>
+                <p class="italic text-gray-700">“Best one-file solution we’ve tried for Web3 product pages. Responsive, stylish, just works everywhere.”</p>
+                <div class="mt-4 font-semibold text-purple-700">Leo V.</div>
+                <div class="text-xs text-gray-500">Frontend, NetDiverse</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Grid Section -->
+    <section class="py-20 px-4 max-w-4xl mx-auto" id="pricing">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Simple, Transparent Pricing</h2>
+        <div class="grid md:grid-cols-3 gap-6 items-end">
+            <div class="border border-gray-300 bg-white p-8 rounded-2xl text-center shadow card-blur animated-fadein">
+                <div class="text-xl font-semibold mb-2">Starter</div>
+                <div class="text-3xl font-extrabold my-4">$0</div>
+                <ul class="mb-6 text-gray-600 space-y-2">
+                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Core UI/UX</li>
+                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Responsive Design</li>
+                    <li><i class="fas fa-minus-circle text-gray-300 mr-2"></i>Web3 Widgets</li>
+                    <li><i class="fas fa-minus-circle text-gray-300 mr-2"></i>Email Support</li>
+                </ul>
+                <a href="#cta" class="text-blue-600 font-bold hover:underline">Start for Free</a>
+            </div>
+            <div class="border-4 border-blue-500 bg-white p-10 rounded-2xl text-center shadow-lg card-blur transform scale-105 animated-fadein">
+                <div class="text-xl font-semibold mb-2 text-blue-700">Pro</div>
+                <div class="text-3xl font-extrabold my-4 text-blue-700">$29</div>
+                <ul class="mb-6 text-gray-700 space-y-2">
+                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>All Starter Features</li>
+                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Web3 Widgets</li>
+                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Email Support</li>
+                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>PDF-ready Layouts</li>
+                </ul>
+                <a href="#cta" class="gradient-bg py-3 px-8 rounded-xl text-white font-semibold shadow hover:opacity-80 transition">Get Pro</a>
+            </div>
+            <div class="border border-gray-300 bg-white p-8 rounded-2xl text-center shadow card-blur animated-fadein">
+                <div class="text-xl font-semibold mb-2">Enterprise</div>
+                <div class="text-3xl font-extrabold my-4">Custom</div>
+                <ul class="mb-6 text-gray-600 space-y-2">
+                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Custom Integrations</li>
+                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>White-label</li>
+                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Priority Support</li>
+                    <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Team Training</li>
+                </ul>
+                <a href="#cta" class="text-blue-600 font-bold hover:underline">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action Section -->
+    <section id="cta" class="gradient-bg py-20 px-4 flex flex-col items-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 text-center">Ready to Build <span class="bg-white bg-opacity-20 px-2 rounded">Your Web3 Page</span>?</h2>
+        <p class="text-white mb-10 text-lg md:text-xl text-center max-w-xl">Launch your Web3.0 product in minutes, inspired by iOS, made for the new Internet. Fast to adapt. Easy to brand. Fits every screen. Stay ahead of the curve!</p>
+        <a href="#" class="gradient-bg py-4 px-10 rounded-lg text-xl font-bold text-white shadow-md hover:scale-105 transform transition inline-block">
+      Try Free Template
+    </a>
+    </section>
+
+    <footer class="text-center text-xs text-gray-400 py-6">
+        Web3OSpace &copy; 2024 &mdash; Designed for modern DApp teams. Not affiliated with Apple Inc.
+    </footer>
+</body>
+
+</html>
+
+<script id="html_badge_script1">
+    window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+        "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDvEGoBaxjAzT5wwHgbLUl7kBi2CG%2BLjPdP9k%2BFaJypoCtwUtyWTVUOLVxoy%2F2TwqCzUrSZx4owJTe8nkP96r44qEZ2r9gXQsL9ddcYdO52LRiDQmJG84nvNEcstH0BfsmqUYjNSftDlt8%2FtDVS9Vd7hVYqF0irhIhx4EbU%2BftWMSrKl2qzggpU%2BaCqhGmHhR48q9NoRbIKcBj7PuZxePzwz%2FhkJABoaVRpFC%2B%2BdC3evHLz3nNQrauYCQgcRWixLEkMm5BF3P1loPxR6Z4TYl2%2Fo5GY5PBmpZiPqQrUOoYD6OTtCzrE4ewd5M08Ov3RVsRcmYizVsFmYL6zUXhfa49KSraJA5ZIf7n0RzCkEsjYvHHAMhBN932x5wh%2Bkm2%2BJKmepMU4ueRio7SQk6R9QeAGCYpdlNPmjRnC0JBDlNe4BSgexwOy8LCIN%2FswosEI3jev4Eq6rQ7MQuYhLVKT2RWpNXE0UP85NyWRrwd%2FVlboNEWXXOxJ625llGH3huIJFctw%3D%3D";
+    window.__genspark_locale = "en-US";
+    window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDvEGoBaxjAzT5wwHgbLUl7kBi2CG+LjPdP9k+FaJypoCtwUtyWTVUOLVxoy/2TwqCzUrSZx4owJTe8nkP96r44qEZ2r9gXQsL9ddcYdO52LRiDQmJG84nvNEcstH0BfsmqUYjNSftDlt8/tDVS9Vd7hVYqF0irhIhx4EbU+ftWMSrKl2qzggpU+aCqhGmHhR48q9NoRbIKcBj7PuZxePzwz/hkJABoaVRpFC++dC3evHLz3nNQrauYCQgcRWixLEkMm5BF3P1loPxR6Z4TYl2/o5GY5PBmpZiPqQrUOoYD6OTtCzrE4ewd5M08Ov3RVsRcmYizVsFmYL6zUXhfa49KSraJA5ZIf7n0RzCkEsjYvHHAMhBN932x5wh+km2+JKmepMU4ueRio7SQk6R9QeAGCYpdlNPmjRnC0JBDlNe4BSgexwOy8LCIN/swosEI3jev4Eq6rQ7MQuYhLVKT2RWpNXE0UP85NyWRrwd/VlboNEWXXOxJ625llGH3huIJFctw==";
+</script>
